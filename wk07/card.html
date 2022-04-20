@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다.-->
+<html>
+
+<head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8">
+    <title>반가워</title>
+    <style>
+        body {
+            background-image: url(/media/solocard.jpg)
+        }
+        
+        #list {
+            color: blueviolet;
+        }
+        
+        .blinking {
+            -webkit-animation: blink 1.5s ease-in-out infinite alternate;
+            -moz-animation: blink 1.5s ease-in-out infinite alternate;
+            animation: blink 1.5s ease-in-out infinite alternate;
+        }
+        
+        @-webkit-keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script></script>
+</head>
+
+<body>
+
+    <h2 id="list"><em>동현에게 카드안에다가 하고픈말 보내기</em></h1>
+
+        <h2>
+            <a href="mailto:jdh000929@naver.com"><img src="/media/treecard.jpg" width="520" height="400" alt="카드">
+                <a class="blinking"><br><mark>크리스마스카드를 눌러서 저에게 이메일을 보내봐요♥</mark></a>
+        </h2>
+        </a>
+</body>
+
+</html>
