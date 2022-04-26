@@ -16,7 +16,7 @@
 - vege3.html: 좋아하는 채소를 설명함.body,header,nav.section,footer들로 페이지를 구분해 img를 이용해 사진설명함
 
 
-### 사용한 html 기술 
+## 사용한 html 기술 
 -list
 
 -text-align
@@ -42,12 +42,21 @@
 -textColorAnimation
 
 -rotate_image
+
 -border-radius
+
 -input
+
 -hover
+
 -datalist
+
 -align
+
 -legend
+
 -form
+
 -fieldset
+
 -hr
