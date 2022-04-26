@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+
+<head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8">
+    <title>아름다운 나의 크리스마스</title>
+    <style>
+        div {
+            display: inline-block;
+            position: absolute;
+            /* 절대 배치 */
+            border: 1px solid lightgray;
+        }
+        
+        div>p {
+            display: inline-block;
+            /* div의 자식 p */
+            position: absolute;
+            /* 절대 배치 */
+            height: 25px;
+            width: 30px;
+            background: palevioletred;
+            text-align: center;
+        }
+        
+        h3 {
+            background-color: rgb(38, 231, 38);
+            color: red;
+            font: italic bold 22px consolas, sans-serif;
+            text-decoration: overline;
+        }
+        
+        #fixed {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 100px;
+            padding: 5px;
+            background: rgb(231, 28, 187);
+            color: white;
+        }
+        
+        #fixed2 {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 100px;
+            padding: 5px;
+            background: rgb(153, 202, 224);
+            color: black;
+        }
+        
+        @keyframes textColorAnimation {
+            0% {
+                color: blue;
+            }
+            30% {
+                color: green;
+                font-size: 2em
+            }
+            100% {
+                color: red;
+                font-size: medium;
+            }
+        }
+        
+        span {
+            animation-name: textColorAnimation;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+        
+        body {
+            background-image: url(/media/banjakyi.jpg);
+        }
+        
+        #list {
+            color: red;
+        }
+        
+        #list2 {
+            color: blue;
+        }
+        
+        #list3 {
+            color: yellow;
+        }
+        
+        #list4 {
+            color: green;
+        }
+        
+        #list5 {
+            color: brown;
+        }
+        
+        #list6 {
+            font-family: cursive;
+        }
+        
+        #float {
+            float: right;
+            border: 1px green;
+            width: 8em;
+            padding: 0.25em;
+            margin: 1em;
+        }
+        
+        .blinking {
+            /*/ 블링킹 태그를 이용해 글자들을 반짝거리게 만들었음/*/
+            -webkit-animation: blink 1.5s ease-in-out infinite alternate;
+            -moz-animation: blink 1.5s ease-in-out infinite alternate;
+            animation: blink 1.5s ease-in-out infinite alternate;
+        }
+        
+        @-webkit-keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        #menubar {
+            background: red;
+        }
+        
+        #menubar ul {
+            /* 여백과 패딩 모두 0 */
+            margin: 0;
+            padding: 0;
+            width: 567px;
+            /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
+        }
+        
+        #menubar ul li {
+            display: inline;
+            /* 새 줄로 넘어가지 않게 */
+            list-style-type: none;
+            /* 마커 삭제 */
+            padding: 0px 15px;
+            /* top=bottom=0, left=right=15px */
+        }
+        
+        #menubar ul li a {
+            color: white;
+            text-decoration: none;
+            /* 링크 보이지 않게 */
+        }
+        
+        #menubar ul li a:hover {
+            color: black;
+            /* 마우스 올라 갈 때 색 */
+        }
+        
+        div#rotate {
+            color: blue;
+            font-size: 50px;
+            transform: rotate(20deg);
+            background-color: yellow;
+        }
+        
+        div#skew {
+            transform: skew(0deg, -20deg);
+            font-size: 50px;
+            color: beige;
+            background-color: royalblue;
+        }
+        
+        div#translate {
+            transform: translateY(100px);
+            color: yellowgreen;
+            font-size: 50px;
+            background-color: blueviolet;
+        }
+        
+        div#scale {
+            transform: scale(3, 1);
+            font-size: 30px;
+            color: black;
+            background-color: azure;
+        }
+    </style>
+    <script></script>
+</head>
+
+<body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+
+    <h3 class="image blinking" style="text-align:center;">Merry Christmas♥<sub>12.25</sub></h3>
+
+    <nav id="menubar" style="text-align: center;">
+        <ul>
+            <li><a href="https://blog.naver.com/psy9133/222708690441?isInf=true" target="_blank">쿠키</a></li>
+            <li><a href="https://blog.naver.com/yonflower916/222108317320" target="_blank">오뎅탕</a></li>
+            <li><a href="https://blog.naver.com/jinni615/222641674305" target="_blank">호떡</a></li>
+            <li><a href="https://blog.naver.com/sunsun1890/222209041157" target="_blank">추어탕</a></li>
+            <li><a href="card2.html" target="_blank">크리스마스카드♥</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <p id="list6"><mark>오늘은 1년에<span>딱!</span> 하루 밖에 없는 <span>'성탄절'</span> 입니다 ♬
+    </p>
+    <div>
+        <img src="media/santa.jpg" width="500px" height="400px" alt="크리스마스" >
+        <img src="media/snowman.png"width="100px" height="150px" style="position:absolute; bottom: 22%; left: 30px;"  alt="눈사람">
+        <img src="media/sasum.png"width="200px" height="150px" style="position:absolute; top: 5%; right: 2px;"  alt="눈사람">
+        <img src="media/santafather.png"width="150px" height="150px" style="position:absolute; bottom: 22%; left: 100px;"  alt="눈사람">
+        <p id="list" style="left: 61px;bottom: 30px;">
+            크
+        </p>
+        <p id="down" id="list2" style="left: 158px;bottom: 10px;">
+            리
+        </p>
+        <p  id="list3" style="right: 215px; bottom: 17px;">
+            스
+        </p>
+        <p id="list4" style="right: 138px; bottom: 5px;">
+            마
+        </p>
+        <p id="list5"style="right: 84px; bottom: 18px;">
+            스
+        </p>
+        <p id="list" style="right: 5px; bottom: 11px; ">
+            ♥
+            <div id="fixed" style="left: 1px; bottom: 350px;">
+        예수님이 탄생하신날!
+    </div>
+    <div id="fixed2" style="left: 1px; bottom: 1px;">
+        hm18:정동현 
+       
+    </div>
+    <div id="rotate" style="right: -200px">내</div>
+    <div id="skew" style="right: -300px; top: 30px;">랑</div>
+    <div id="translate" style="right: -400px; top: -50px;">같</div>
+    <div id="scale"style="right: -490px; top: 10px;">이</div>
+    <div class="image blinking"  id="rotate" style="right: -100px; bottom: 150px;">눈</div>
+    <div class="image blinking"  id="translate" style="right: -150px; bottom: 200px;">사</div>
+    <div class="image blinking"   id="scale"style="right: -220px; bottom: 130px;">람</div>
+    <div id="skew" style="right: -320px; bottom: 120px;">만</div>
+    <div id="rotate" style="right: -390px; bottom: 120px;">들</div>
+    <div id="skew" style="right: -450px; bottom: 90px;">래</div>
+    <div id="translate" style="right: -560px; bottom: 200px;">?</div>
+    
+   
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <audio  src="media/Kelly Clarkson - Christmas Eve [Official Audio].mp3" autoplay controls loop>
+    </audio>
+
+    
+
+   
+
+</body>
+
+</html>
