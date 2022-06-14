@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동호회 모집</title>
+    <style>
+        input[type=text] {
+            /* text 창에만 적용 */
+            color: blue;
+        }
+        
+        input:hover,
+        textarea:hover {
+            /* 마우스 올라 올 때 */
+            background: aliceblue;
+        }
+        
+        input[type=text]:focus,
+        input[type=email]:focus {
+            /* 포커스 받을 때 */
+            font-size: 120%;
+        }
+        
+        label {
+            display: block;
+            /* 새 라인에서 시작 */
+            padding: 10px;
+        }
+        
+        label span {
+            float: left;
+            width: 90px;
+            text-align: right;
+            padding: 10px;
+        }
+        
+        @keyframes textColorAnimation {
+            0% {
+                color: rgb(39, 7, 68);
+            }
+            30% {
+                color: rgb(91, 14, 114);
+            }
+            100% {
+                color: rgb(33, 110, 81);
+            }
+        }
+        
+        span {
+            animation-name: textColorAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        
+        body {
+            background-image: url(media/back.jpg);
+        }
+        
+        section {
+            float: left;
+        }
+        
+        .logo {
+            width: 30px;
+            display: block;
+            float: left;
+            /* margin-right: 5px; */
+        }
+        
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h1 style="color:purple; text-align: center;">
+        <봉사 동호회>
+    </h1>
+    <hr>
+    <section>
+        <form>
+            <label> <span>이름</span>
+            <input type="text" placeholder="이름">
+            <br>
+         </label>
+            <label> <span>전화번호</span>
+            <input type="text" placeholder="010-1234-1234">
+         </label>
+            <label> <span>학번</span>            
+            <input type="text" placeholder="ex)20162594"> 
+         </label>
+            <label> <span>활동목적</span>				
+            <textarea placeholder="메시지를 남겨주세요"> </textarea>
+            <label> <span></span>
+                <button onclick="window.open('hm18_help.html')">지원하기</button>
+            <input type="reset" value="지우기">
+         </label>
+        </form>
+
+        <h3 style="font-family:cursive;"><mark> <img src="media/santafather.png" class="logo" alt="로고">활동목적 섬세하게 기입 바람 !</mark>
+        </h3>
+    </section>
+    <section>
+        <h3 style="color: blueviolet;">모집일정:<br>상 시 모 집</h3>
+        <h3 style="color: blueviolet;">모집대상:<br>남을 돕는일에 관심있는 사람</h3>
+        <h3 style="color: blueviolet;">선정기준:<br>활동목적,내용 검토 후 선정</h3>
+        <h3 style="color: blueviolet;">문의사항:<br>☎010-9529-1288</h3>
+    </section>
+    <img src="media/dog.jpg" width="400px" height="400px" alt="강아지">
+
+</body>
+
+</html>
