@@ -22,12 +22,7 @@
 - card2.html: mail to 속성을 이용해 그림을 누르면 바로 이메일을 보낼 수 있게 설정함.
 - form.html: web form과 fieldset 사용함. 봉사 동호회 참여를 위한 회원가입창을 구현함.
 - hm18_help.html: 지원하기 버튼을 누르면 동호회에 정상적으로 지원이 됬다는 창을 구현함.
-- playlist1.html: 좋아하는 노래를 설명함.iframe을 이용해 유투브 영상을 퍼오기함.section을 통해 가사를 보기 쉽게 분배함.
-- playlist2.html: 좋아하는 노래를 설명함.iframe을 이용해 유투브 영상을 퍼오기함.section을 통해 가사를 보기 쉽게 분배함.
-- playlist3.html: 좋아하는 노래를 설명함.iframe을 이용해 유투브 영상을 퍼오기함.section을 통해 가사를 보기 쉽게 분배함.
-- vege1.html: 좋아하는 채소를 설명함.body,header,nav.section,footer들로 페이지를 구분해 img를 이용해 사진설명함
-- vege2.html: 좋아하는 채소를 설명함.body,header,nav.section,footer들로 페이지를 구분해 img를 이용해 사진설명함
-- vege3.html: 좋아하는 채소를 설명함.body,header,nav.section,footer들로 페이지를 구분해 img를 이용해 사진설명함
+
 
 
 ## 사용한 html 기술 
